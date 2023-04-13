@@ -1,0 +1,21 @@
+{
+	"name": "com.ixlab.viewr",
+	"displayName": "ixViewR",
+	"version": "1.0.0",
+	"unity": "2021.3",
+	"author": "IXLAB",
+	"description": "ViewR",
+	"dependencies": {
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ixlabTUD/ViewR.git?path=/Assets/ViewR"
+	},
+	"samples": [
+        	{
+            	"displayName": "ViewR_StartAnywhere",
+            	"description": "Base Scene for using ViewR anywhere",
+            	"path": "Samples~/ViewR_StartAnywhere"
+        	}
+    	]
+}

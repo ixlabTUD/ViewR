@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &1548192625367551889
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7837257734049236745, guid: 853079b1ab36da94a9033bf37e8f9c0e,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1008060561697206567, guid: 5357df73468672d4794f1197cecf8193,
+        type: 3}
+    - target: {fileID: 7837257734049236750, guid: 853079b1ab36da94a9033bf37e8f9c0e,
+        type: 3}
+      propertyPath: m_TagString
+      value: DuplicatableInteractable
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837257734049236751, guid: 853079b1ab36da94a9033bf37e8f9c0e,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1008060561697206567, guid: 5357df73468672d4794f1197cecf8193,
+        type: 3}
+    - target: {fileID: 7837257734144219760, guid: 853079b1ab36da94a9033bf37e8f9c0e,
+        type: 3}
+      propertyPath: _realtime
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837257734144219760, guid: 853079b1ab36da94a9033bf37e8f9c0e,
+        type: 3}
+      propertyPath: _viewUUID
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837257734144219766, guid: 853079b1ab36da94a9033bf37e8f9c0e,
+        type: 3}
+      propertyPath: m_Name
+      value: StoneCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837257734144219775, guid: 853079b1ab36da94a9033bf37e8f9c0e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837257734144219775, guid: 853079b1ab36da94a9033bf37e8f9c0e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.6972404
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837257734144219775, guid: 853079b1ab36da94a9033bf37e8f9c0e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1028473
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837257734144219775, guid: 853079b1ab36da94a9033bf37e8f9c0e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.4350348
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837257734144219775, guid: 853079b1ab36da94a9033bf37e8f9c0e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.94683725
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837257734144219775, guid: 853079b1ab36da94a9033bf37e8f9c0e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.12167777
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837257734144219775, guid: 853079b1ab36da94a9033bf37e8f9c0e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.2953857
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837257734144219775, guid: 853079b1ab36da94a9033bf37e8f9c0e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.037960865
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837257734144219775, guid: 853079b1ab36da94a9033bf37e8f9c0e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837257734144219775, guid: 853079b1ab36da94a9033bf37e8f9c0e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837257734144219775, guid: 853079b1ab36da94a9033bf37e8f9c0e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 853079b1ab36da94a9033bf37e8f9c0e, type: 3}
+--- !u!1 &8772942391592716447 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7837257734049236750, guid: 853079b1ab36da94a9033bf37e8f9c0e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1548192625367551889}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5668930707422140495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8772942391592716447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b04f1c4dfba046bba77e074d72b5dbb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabName: StoneCube
+  parentWithRealtimeTransform: {fileID: 8772942391732655598}
+--- !u!4 &8772942391732655598 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7837257734144219775, guid: 853079b1ab36da94a9033bf37e8f9c0e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1548192625367551889}
+  m_PrefabAsset: {fileID: 0}

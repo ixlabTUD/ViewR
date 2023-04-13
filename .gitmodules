@@ -1,0 +1,3 @@
+[submodule "Assets/Submodules/creature_collection"]
+	path = Assets/Submodules/creature_collection
+	url = https://dev.ixlab.inf.tu-dresden.de/lab/ixmodels/foyerapb_content_submodules/creature_collection.git

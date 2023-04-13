@@ -1,0 +1,1999 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8611605717211610218
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8611605717211610217}
+  - component: {fileID: 8611605717211610216}
+  - component: {fileID: 8611605717211610223}
+  m_Layer: 0
+  m_Name: Intro
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &8611605717211610217
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605717211610218}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8611605718370505700}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8611605717211610216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605717211610218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fb38182ace946a6890c1e8d6ca2014d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showInfoBarOnEnable: 1
+  infoWindowCaller: {fileID: 0}
+  descriptionSuccess: 
+  descriptionFailure: 
+  taskStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  taskCompleted:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &8611605717211610223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605717211610218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dba02e66f54a14887229e0c6e55319, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modalWindowConfig:
+    title: Alignment
+    image: {fileID: 0}
+    message: We will start with aligning your virtual and real world.
+    uiColors:
+      useCustomColors: 0
+      headerColor: {r: 0, g: 0, b: 0, a: 0}
+      bodyColor: {r: 0, g: 0, b: 0, a: 0}
+      footerColor: {r: 0, g: 0, b: 0, a: 0}
+    modalWindowBodyLayout: 1
+    reverseImageAndTextOrder: 0
+    showPinButton: 1
+    forceFollowState: 3
+    confirmButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    declineButtonConfig:
+      buttonText: Skip alignment!
+      useCustomColor: 1
+      customButtonColor: {r: 0.5377358, g: 0.1403524, b: 0.1403524, a: 1}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    alternate1ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    alternate2ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    alternate3ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+  triggerOnEnable: 0
+  closeOnDisable: 0
+  onConfirmCallback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8611605718370505707}
+        m_TargetAssemblyTypeName: fschier.SurgeExtensions.StateMachineExt.StateMachineExtended,
+          Assembly-CSharp
+        m_MethodName: NextState
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  onDeclineCallback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8611605717211610216}
+        m_TargetAssemblyTypeName: Pixelplacement.State, Assembly-CSharp
+        m_MethodName: ChangeState
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8611605717617728189}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onAlternate1Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  onAlternate2Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  onAlternate3Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  onShowWindow:
+    m_PersistentCalls:
+      m_Calls: []
+  onCloseWindow:
+    m_PersistentCalls:
+      m_Calls: []
+  LocalModalWindowPanel: {fileID: 0}
+--- !u!1 &8611605717312105887
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8611605717312105886}
+  - component: {fileID: 8611605717312105884}
+  - component: {fileID: 8611605717312105885}
+  m_Layer: 0
+  m_Name: Confirm Alignment
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &8611605717312105886
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605717312105887}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8611605718370505700}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8611605717312105884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605717312105887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dba02e66f54a14887229e0c6e55319, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modalWindowConfig:
+    title: Confirm Alignment
+    image: {fileID: 0}
+    message: Does this alignment seem correct?
+    uiColors:
+      useCustomColors: 0
+      headerColor: {r: 0, g: 0, b: 0, a: 0}
+      bodyColor: {r: 0, g: 0, b: 0, a: 0}
+      footerColor: {r: 0, g: 0, b: 0, a: 0}
+    modalWindowBodyLayout: 1
+    reverseImageAndTextOrder: 0
+    showPinButton: 1
+    forceFollowState: 4
+    confirmButtonConfig:
+      buttonText: Looks good!
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    declineButtonConfig:
+      buttonText: Let's try it again.
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    alternate1ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    alternate2ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    alternate3ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+  triggerOnEnable: 0
+  closeOnDisable: 0
+  onConfirmCallback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8611605718370505707}
+        m_TargetAssemblyTypeName: Pixelplacement.StateMachine, Assembly-CSharp
+        m_MethodName: Exit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onDeclineCallback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8611605717312105885}
+        m_TargetAssemblyTypeName: Pixelplacement.State, Assembly-CSharp
+        m_MethodName: ChangeState
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8611605717946680466}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onAlternate1Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  onAlternate2Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  onAlternate3Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  onShowWindow:
+    m_PersistentCalls:
+      m_Calls: []
+  onCloseWindow:
+    m_PersistentCalls:
+      m_Calls: []
+  LocalModalWindowPanel: {fileID: 0}
+--- !u!114 &8611605717312105885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605717312105887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fb38182ace946a6890c1e8d6ca2014d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showInfoBarOnEnable: 1
+  infoWindowCaller: {fileID: 0}
+  descriptionSuccess: 
+  descriptionFailure: 
+  taskStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  taskCompleted:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &8611605717329507587
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8611605717329507586}
+  - component: {fileID: 8611605717329507584}
+  - component: {fileID: 8611605717329507585}
+  m_Layer: 0
+  m_Name: Adjust
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &8611605717329507586
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605717329507587}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8611605718370505700}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8611605717329507584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605717329507587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fb38182ace946a6890c1e8d6ca2014d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showInfoBarOnEnable: 1
+  infoWindowCaller: {fileID: 0}
+  descriptionSuccess: 
+  descriptionFailure: 
+  taskStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  taskCompleted:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &8611605717329507585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605717329507587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dba02e66f54a14887229e0c6e55319, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modalWindowConfig:
+    title: All markers placed!
+    image: {fileID: 0}
+    message: Wonderful! Do you want to tweak your selection?
+    uiColors:
+      useCustomColors: 0
+      headerColor: {r: 0, g: 0, b: 0, a: 0}
+      bodyColor: {r: 0, g: 0, b: 0, a: 0}
+      footerColor: {r: 0, g: 0, b: 0, a: 0}
+    modalWindowBodyLayout: 0
+    reverseImageAndTextOrder: 0
+    showPinButton: 1
+    forceFollowState: 3
+    confirmButtonConfig:
+      buttonText: No
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    declineButtonConfig:
+      buttonText: Yes
+      useCustomColor: 1
+      customButtonColor: {r: 0.5372549, g: 0.14117648, b: 0.14117648, a: 1}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    alternate1ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    alternate2ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    alternate3ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+  triggerOnEnable: 0
+  closeOnDisable: 0
+  onConfirmCallback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8611605717329507584}
+        m_TargetAssemblyTypeName: Pixelplacement.State, Assembly-CSharp
+        m_MethodName: ChangeState
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8611605718453306566}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  onDeclineCallback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8611605717329507584}
+        m_TargetAssemblyTypeName: Pixelplacement.State, Assembly-CSharp
+        m_MethodName: ChangeState
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8611605717538353624}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  onAlternate1Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  onAlternate2Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  onAlternate3Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  onShowWindow:
+    m_PersistentCalls:
+      m_Calls: []
+  onCloseWindow:
+    m_PersistentCalls:
+      m_Calls: []
+  LocalModalWindowPanel: {fileID: 0}
+--- !u!1 &8611605717538353624
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8611605717538353631}
+  - component: {fileID: 8611605717538353629}
+  - component: {fileID: 8611605717538353630}
+  m_Layer: 0
+  m_Name: DoAdjust
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &8611605717538353631
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605717538353624}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8611605718370505700}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8611605717538353629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605717538353624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fb38182ace946a6890c1e8d6ca2014d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showInfoBarOnEnable: 1
+  infoWindowCaller: {fileID: 0}
+  descriptionSuccess: 
+  descriptionFailure: 
+  taskStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  taskCompleted:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &8611605717538353630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605717538353624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dba02e66f54a14887229e0c6e55319, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modalWindowConfig:
+    title: Adjustment
+    image: {fileID: 0}
+    message: Simply grab the markers with your middle finger button or with a pinch
+      gesture and adjust their positions.  This is still experimental. Alternatively,
+      you may restart the alignment procedure.
+    uiColors:
+      useCustomColors: 0
+      headerColor: {r: 0, g: 0, b: 0, a: 0}
+      bodyColor: {r: 0, g: 0, b: 0, a: 0}
+      footerColor: {r: 0, g: 0, b: 0, a: 0}
+    modalWindowBodyLayout: 0
+    reverseImageAndTextOrder: 0
+    showPinButton: 1
+    forceFollowState: 3
+    confirmButtonConfig:
+      buttonText: Continue with setup
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    declineButtonConfig:
+      buttonText: Restart alignment
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    alternate1ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    alternate2ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    alternate3ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+  triggerOnEnable: 0
+  closeOnDisable: 0
+  onConfirmCallback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8611605717538353629}
+        m_TargetAssemblyTypeName: Pixelplacement.State, Assembly-CSharp
+        m_MethodName: ChangeState
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8611605718453306566}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onDeclineCallback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8611605717946680471}
+        m_TargetAssemblyTypeName: Pixelplacement.State, Assembly-CSharp
+        m_MethodName: ChangeState
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8611605717946680466}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onAlternate1Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  onAlternate2Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  onAlternate3Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  onShowWindow:
+    m_PersistentCalls:
+      m_Calls: []
+  onCloseWindow:
+    m_PersistentCalls:
+      m_Calls: []
+  LocalModalWindowPanel: {fileID: 0}
+--- !u!1 &8611605717617728189
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8611605717617728188}
+  - component: {fileID: 8611605717617728131}
+  - component: {fileID: 8611605717617728130}
+  - component: {fileID: 8611605717617728129}
+  m_Layer: 0
+  m_Name: SkipAlignment
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &8611605717617728188
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605717617728189}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8611605718370505700}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8611605717617728131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605717617728189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fb38182ace946a6890c1e8d6ca2014d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showInfoBarOnEnable: 1
+  infoWindowCaller: {fileID: 0}
+  descriptionSuccess: 
+  descriptionFailure: 
+  taskStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  taskCompleted:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &8611605717617728130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605717617728189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dba02e66f54a14887229e0c6e55319, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modalWindowConfig:
+    title: Alignment
+    image: {fileID: 0}
+    message: Are you sure you do not want to align?
+    uiColors:
+      useCustomColors: 0
+      headerColor: {r: 0, g: 0, b: 0, a: 0}
+      bodyColor: {r: 0, g: 0, b: 0, a: 0}
+      footerColor: {r: 0, g: 0, b: 0, a: 0}
+    modalWindowBodyLayout: 1
+    reverseImageAndTextOrder: 0
+    showPinButton: 1
+    forceFollowState: 3
+    confirmButtonConfig:
+      buttonText: Yes
+      useCustomColor: 1
+      customButtonColor: {r: 0.5372549, g: 0.14117648, b: 0.14117648, a: 1}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    declineButtonConfig:
+      buttonText: No
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    alternate1ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    alternate2ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    alternate3ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+  triggerOnEnable: 0
+  closeOnDisable: 0
+  onConfirmCallback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8611605718370505707}
+        m_TargetAssemblyTypeName: Pixelplacement.StateMachine, Assembly-CSharp
+        m_MethodName: Exit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8611605717617728129}
+        m_TargetAssemblyTypeName: ViewR.FloatingUI.TutorialSequencing.AlignmentTutorial.ShowSpace.ShowSpaceAccessor,
+          Assembly-CSharp
+        m_MethodName: DoShowSpace
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: fschier.SurgeExtensions.StateMachineExt.StateMachineExtended,
+          fschier
+        m_MethodName: NextState
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  onDeclineCallback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8611605718370505707}
+        m_TargetAssemblyTypeName: fschier.SurgeExtensions.StateMachineExt.StateMachineExtended,
+          Assembly-CSharp
+        m_MethodName: NextState
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  onAlternate1Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  onAlternate2Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  onAlternate3Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  onShowWindow:
+    m_PersistentCalls:
+      m_Calls: []
+  onCloseWindow:
+    m_PersistentCalls:
+      m_Calls: []
+  LocalModalWindowPanel: {fileID: 0}
+--- !u!114 &8611605717617728129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605717617728189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e0dc284f112442cba127ba9a766b5a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &8611605717946680466
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8611605717946680465}
+  - component: {fileID: 8611605717946680471}
+  - component: {fileID: 8611605717946680464}
+  - component: {fileID: 8611605717946680470}
+  - component: {fileID: 8611605717946680469}
+  m_Layer: 0
+  m_Name: MarkerProcedureInstructions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &8611605717946680465
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605717946680466}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8611605718370505700}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8611605717946680471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605717946680466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fb38182ace946a6890c1e8d6ca2014d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showInfoBarOnEnable: 1
+  infoWindowCaller: {fileID: 0}
+  descriptionSuccess: 
+  descriptionFailure: 
+  taskStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  taskCompleted:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &8611605717946680464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605717946680466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dba02e66f54a14887229e0c6e55319, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modalWindowConfig:
+    title: 
+    image: {fileID: 0}
+    message: We will now guide you to place a number of markers to align the virtual
+      and real world. Ready?
+    uiColors:
+      useCustomColors: 0
+      headerColor: {r: 0, g: 0, b: 0, a: 0}
+      bodyColor: {r: 0, g: 0, b: 0, a: 0}
+      footerColor: {r: 0, g: 0, b: 0, a: 0}
+    modalWindowBodyLayout: 0
+    reverseImageAndTextOrder: 0
+    showPinButton: 1
+    forceFollowState: 3
+    confirmButtonConfig:
+      buttonText: Ready!
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    declineButtonConfig:
+      buttonText: Back
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    alternate1ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    alternate2ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    alternate3ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+  triggerOnEnable: 0
+  closeOnDisable: 0
+  onConfirmCallback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8611605717946680471}
+        m_TargetAssemblyTypeName: TutorialSequencing.TutorialTask, Assembly-CSharp
+        m_MethodName: NextState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onDeclineCallback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8611605717946680471}
+        m_TargetAssemblyTypeName: FloatingUI.TutorialSequencing.TutorialTask, Assembly-CSharp
+        m_MethodName: PreviousState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onAlternate1Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  onAlternate2Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  onAlternate3Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  onShowWindow:
+    m_PersistentCalls:
+      m_Calls: []
+  onCloseWindow:
+    m_PersistentCalls:
+      m_Calls: []
+  LocalModalWindowPanel: {fileID: 0}
+--- !u!114 &8611605717946680470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605717946680466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0678b5622b67ec845a3ad70f8827d4a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8611605717946680469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605717946680466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e0dc284f112442cba127ba9a766b5a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &8611605718090074390
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8611605718090074389}
+  - component: {fileID: 8611605718090074395}
+  - component: {fileID: 8611605718090074388}
+  - component: {fileID: 8611605718090074394}
+  - component: {fileID: 8611605718090074393}
+  m_Layer: 0
+  m_Name: MarkerPlacementProcedure
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8611605718090074389
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605718090074390}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8611605717971891141}
+  m_Father: {fileID: 8611605718370505700}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8611605718090074395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605718090074390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55938fb1577dd4ad3af7e994048c86f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8611605718090074388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605718090074390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6008c5ee04114d0c97e693ca868e7f01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultState: {fileID: 8611605717971891142}
+  currentState: {fileID: 0}
+  _unityEventsFolded: 1
+  verbose: 1
+  allowReentry: 1
+  returnToDefaultOnDisable: 1
+  OnStateExited:
+    m_PersistentCalls:
+      m_Calls: []
+  OnStateEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnFirstStateEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnFirstStateExited:
+    m_PersistentCalls:
+      m_Calls: []
+  OnLastStateEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnLastStateExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8611605718370505707}
+        m_TargetAssemblyTypeName: fschier.SurgeExtensions.StateMachineExt.StateMachineExtended,
+          Assembly-CSharp
+        m_MethodName: NextState
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  _currentTutorialTask: {fileID: 0}
+  debugging: 1
+--- !u!114 &8611605718090074394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605718090074390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a49074de16465c14d801ae1f2ba4be5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8611605718090074393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605718090074390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e1c4093d0a1e9b419d680e9033583f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabLastState: {fileID: 2054299706051243253, guid: d3dd9b5148ccd9442ae39247f3021b14,
+    type: 3}
+--- !u!1 &8611605718176321228
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8611605718176321235}
+  - component: {fileID: 8611605718176321233}
+  - component: {fileID: 8611605718176321234}
+  m_Layer: 0
+  m_Name: Marker Tutorial
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &8611605718176321235
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605718176321228}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8611605718370505700}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8611605718176321233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605718176321228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fb38182ace946a6890c1e8d6ca2014d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showInfoBarOnEnable: 1
+  infoWindowCaller: {fileID: 0}
+  descriptionSuccess: 
+  descriptionFailure: 
+  taskStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  taskCompleted:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &8611605718176321234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605718176321228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dba02e66f54a14887229e0c6e55319, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modalWindowConfig:
+    title: How to place a marker?
+    image: {fileID: 21300000, guid: 7d6100e71a2136a4eb0cc0d4564ea4dd, type: 3}
+    message: To place a marker, please do the following gesture, or press the lower
+      Button on one of your controllers.
+    uiColors:
+      useCustomColors: 0
+      headerColor: {r: 0, g: 0, b: 0, a: 0}
+      bodyColor: {r: 0, g: 0, b: 0, a: 0}
+      footerColor: {r: 0, g: 0, b: 0, a: 0}
+    modalWindowBodyLayout: 0
+    reverseImageAndTextOrder: 1
+    showPinButton: 1
+    forceFollowState: 3
+    confirmButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    declineButtonConfig:
+      buttonText: Back
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    alternate1ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    alternate2ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    alternate3ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+  triggerOnEnable: 0
+  closeOnDisable: 0
+  onConfirmCallback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8611605718176321233}
+        m_TargetAssemblyTypeName: TutorialSequencing.TutorialTask, Assembly-CSharp
+        m_MethodName: NextState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onDeclineCallback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8611605718176321233}
+        m_TargetAssemblyTypeName: FloatingUI.TutorialSequencing.TutorialTask, Assembly-CSharp
+        m_MethodName: PreviousState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onAlternate1Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  onAlternate2Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  onAlternate3Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  onShowWindow:
+    m_PersistentCalls:
+      m_Calls: []
+  onCloseWindow:
+    m_PersistentCalls:
+      m_Calls: []
+  LocalModalWindowPanel: {fileID: 0}
+--- !u!1 &8611605718370505701
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8611605718370505700}
+  - component: {fileID: 8611605718370505706}
+  - component: {fileID: 8611605718370505707}
+  - component: {fileID: 8611605718370505705}
+  m_Layer: 0
+  m_Name: KabschAlignmentStateMachine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &8611605718370505700
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605718370505701}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8611605717617728188}
+  - {fileID: 8611605717211610217}
+  - {fileID: 8611605718176321235}
+  - {fileID: 8611605718454940714}
+  - {fileID: 8611605717946680465}
+  - {fileID: 8611605718090074389}
+  - {fileID: 8611605717329507586}
+  - {fileID: 8611605717538353631}
+  - {fileID: 8611605718453306565}
+  - {fileID: 8611605717312105886}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8611605718370505706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605718370505701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55938fb1577dd4ad3af7e994048c86f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8611605718370505707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605718370505701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6008c5ee04114d0c97e693ca868e7f01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultState: {fileID: 8611605717211610218}
+  currentState: {fileID: 0}
+  _unityEventsFolded: 1
+  verbose: 0
+  allowReentry: 0
+  returnToDefaultOnDisable: 1
+  OnStateExited:
+    m_PersistentCalls:
+      m_Calls: []
+  OnStateEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnFirstStateEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnFirstStateExited:
+    m_PersistentCalls:
+      m_Calls: []
+  OnLastStateEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  OnLastStateExited:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: fschier.SurgeExtensions.StateMachineExt.StateMachineExtended,
+          Assembly-CSharp
+        m_MethodName: NextState
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  _currentTutorialTask: {fileID: 0}
+  debugging: 0
+--- !u!114 &8611605718370505705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605718370505701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91f82597ee754a17868f054268702eb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &8611605718453306566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8611605718453306565}
+  - component: {fileID: 8611605718453306564}
+  - component: {fileID: 8611605718453306571}
+  m_Layer: 0
+  m_Name: Prepare Alignment
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &8611605718453306565
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605718453306566}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8611605718370505700}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8611605718453306564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605718453306566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f350496424b0f343b939cd898f454c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showInfoBarOnEnable: 1
+  infoWindowCaller: {fileID: 0}
+  descriptionSuccess: 
+  descriptionFailure: 
+  taskStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  taskCompleted:
+    m_PersistentCalls:
+      m_Calls: []
+  readMeAbove: 0
+--- !u!114 &8611605718453306571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605718453306566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dba02e66f54a14887229e0c6e55319, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modalWindowConfig:
+    title: Preparing Alignment
+    image: {fileID: 0}
+    message: Alright! We are now going to position you in the space.
+    uiColors:
+      useCustomColors: 0
+      headerColor: {r: 0, g: 0, b: 0, a: 0}
+      bodyColor: {r: 0, g: 0, b: 0, a: 0}
+      footerColor: {r: 0, g: 0, b: 0, a: 0}
+    modalWindowBodyLayout: 1
+    reverseImageAndTextOrder: 0
+    showPinButton: 1
+    forceFollowState: 3
+    confirmButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    declineButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    alternate1ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    alternate2ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    alternate3ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+  triggerOnEnable: 0
+  closeOnDisable: 0
+  onConfirmCallback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8611605718453306564}
+        m_TargetAssemblyTypeName: FloatingUI.TutorialSequencing.AlignmentTutorial.PrepareAlignmentTask,
+          Assembly-CSharp
+        m_MethodName: MoveUserUsingKabsch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 8611605718370505707}
+        m_TargetAssemblyTypeName: fschier.SurgeExtensions.StateMachineExt.StateMachineExtended,
+          Assembly-CSharp
+        m_MethodName: NextState
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  onDeclineCallback:
+    m_PersistentCalls:
+      m_Calls: []
+  onAlternate1Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  onAlternate2Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  onAlternate3Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  onShowWindow:
+    m_PersistentCalls:
+      m_Calls: []
+  onCloseWindow:
+    m_PersistentCalls:
+      m_Calls: []
+  LocalModalWindowPanel: {fileID: 0}
+--- !u!1 &8611605718454940715
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8611605718454940714}
+  - component: {fileID: 8611605718454940712}
+  - component: {fileID: 8611605718454940713}
+  m_Layer: 0
+  m_Name: Marker Tutorial - remove
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &8611605718454940714
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605718454940715}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8611605718370505700}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8611605718454940712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605718454940715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fb38182ace946a6890c1e8d6ca2014d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showInfoBarOnEnable: 1
+  infoWindowCaller: {fileID: 0}
+  descriptionSuccess: 
+  descriptionFailure: 
+  taskStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  taskCompleted:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &8611605718454940713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611605718454940715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dba02e66f54a14887229e0c6e55319, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modalWindowConfig:
+    title: How to remove a marker?
+    image: {fileID: 21300000, guid: 2fd195032379f4f45b1518ea0b3024f0, type: 3}
+    message: Not happy with a selection? No problem! Please do the following gesture
+      or press the upper button to remove a marker.
+    uiColors:
+      useCustomColors: 0
+      headerColor: {r: 0, g: 0, b: 0, a: 0}
+      bodyColor: {r: 0, g: 0, b: 0, a: 0}
+      footerColor: {r: 0, g: 0, b: 0, a: 0}
+    modalWindowBodyLayout: 0
+    reverseImageAndTextOrder: 1
+    showPinButton: 1
+    forceFollowState: 3
+    confirmButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    declineButtonConfig:
+      buttonText: Back
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    alternate1ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    alternate2ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    alternate3ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+  triggerOnEnable: 0
+  closeOnDisable: 0
+  onConfirmCallback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8611605718454940712}
+        m_TargetAssemblyTypeName: TutorialSequencing.TutorialTask, Assembly-CSharp
+        m_MethodName: NextState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onDeclineCallback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8611605718454940712}
+        m_TargetAssemblyTypeName: FloatingUI.TutorialSequencing.TutorialTask, Assembly-CSharp
+        m_MethodName: PreviousState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onAlternate1Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  onAlternate2Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  onAlternate3Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  onShowWindow:
+    m_PersistentCalls:
+      m_Calls: []
+  onCloseWindow:
+    m_PersistentCalls:
+      m_Calls: []
+  LocalModalWindowPanel: {fileID: 0}
+--- !u!1001 &7710381866916798259
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8611605718090074389}
+    m_Modifications:
+    - target: {fileID: 2054299706051243253, guid: b58222444e2bb544ea78b491fb4070d6,
+        type: 3}
+      propertyPath: m_Name
+      value: PlaceMarker 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054299706051243254, guid: b58222444e2bb544ea78b491fb4070d6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054299706051243254, guid: b58222444e2bb544ea78b491fb4070d6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054299706051243254, guid: b58222444e2bb544ea78b491fb4070d6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054299706051243254, guid: b58222444e2bb544ea78b491fb4070d6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054299706051243254, guid: b58222444e2bb544ea78b491fb4070d6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054299706051243254, guid: b58222444e2bb544ea78b491fb4070d6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054299706051243254, guid: b58222444e2bb544ea78b491fb4070d6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054299706051243254, guid: b58222444e2bb544ea78b491fb4070d6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054299706051243254, guid: b58222444e2bb544ea78b491fb4070d6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054299706051243254, guid: b58222444e2bb544ea78b491fb4070d6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054299706051243254, guid: b58222444e2bb544ea78b491fb4070d6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054299706051243256, guid: b58222444e2bb544ea78b491fb4070d6,
+        type: 3}
+      propertyPath: modalWindowConfig.alternate3ButtonConfig.buttonText
+      value: Force Skip
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054299706051243256, guid: b58222444e2bb544ea78b491fb4070d6,
+        type: 3}
+      propertyPath: modalWindowConfig.alternate3ButtonConfig.useCustomColor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054299706051243256, guid: b58222444e2bb544ea78b491fb4070d6,
+        type: 3}
+      propertyPath: modalWindowConfig.alternate3ButtonConfig.customButtonColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054299706051243256, guid: b58222444e2bb544ea78b491fb4070d6,
+        type: 3}
+      propertyPath: modalWindowConfig.alternate3ButtonConfig.customButtonColor.b
+      value: 0.5372549
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054299706051243256, guid: b58222444e2bb544ea78b491fb4070d6,
+        type: 3}
+      propertyPath: modalWindowConfig.alternate3ButtonConfig.customButtonColor.g
+      value: 0.57254905
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054299706051243256, guid: b58222444e2bb544ea78b491fb4070d6,
+        type: 3}
+      propertyPath: modalWindowConfig.alternate3ButtonConfig.customButtonColor.r
+      value: 0.9529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 2054299706051243256, guid: b58222444e2bb544ea78b491fb4070d6,
+        type: 3}
+      propertyPath: onAlternate1Callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8611605717946680471}
+    - target: {fileID: 2054299706051243256, guid: b58222444e2bb544ea78b491fb4070d6,
+        type: 3}
+      propertyPath: onAlternate1Callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8611605717946680466}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b58222444e2bb544ea78b491fb4070d6, type: 3}
+--- !u!4 &8611605717971891141 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2054299706051243254, guid: b58222444e2bb544ea78b491fb4070d6,
+    type: 3}
+  m_PrefabInstance: {fileID: 7710381866916798259}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8611605717971891142 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2054299706051243253, guid: b58222444e2bb544ea78b491fb4070d6,
+    type: 3}
+  m_PrefabInstance: {fileID: 7710381866916798259}
+  m_PrefabAsset: {fileID: 0}
