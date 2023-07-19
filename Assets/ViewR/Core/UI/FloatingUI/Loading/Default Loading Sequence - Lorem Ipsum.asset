@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd8a035f90a95cd4aa0d5cfd6f6c07cd, type: 3}
+  m_Name: Default Loading Sequence - Lorem Ipsum
+  m_EditorClassIdentifier: 
+  backgrounds:
+  - {fileID: 21300000, guid: bd906a210f666b94bbfdbc99a7c499d6, type: 3}
+  - {fileID: 21300000, guid: 5533ca63df1a115499cf2c0cd3cb744e, type: 3}
+  - {fileID: 21300000, guid: 07f4ede07ac9da747b8f254006794b50, type: 3}
+  - {fileID: 21300000, guid: 1dc5e6d17d11cef4d83fe09560d5b6d7, type: 3}
+  - {fileID: 21300000, guid: be854a767acf6bb49a0209d1e0d57523, type: 3}
+  - {fileID: 21300000, guid: be854a767acf6bb49a0209d1e0d57523, type: 3}
+  tips:
+  - tipTitle: Title01
+    tip: Quia temporibus quaerat eligendi suscipit ipsam odit blanditiis qui. Quod
+      dolorem et vero voluptatibus officia.
+  - tipTitle: Title02
+    tip: 'Ducimus odio sequi voluptatem tenetur laudantium quaerat. '
+  - tipTitle: Title03
+    tip: 'Aut iusto beatae culpa esse praesentium sint. '
+  - tipTitle: Title04
+    tip: Ea non neque dicta consequuntur temporibus est. Harum ipsum voluptatem omnis
+      maiores.
+  debugging: 0

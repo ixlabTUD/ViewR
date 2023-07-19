@@ -1,0 +1,156 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2054299706051243253
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2054299706051243254}
+  - component: {fileID: 8254038030490139517}
+  - component: {fileID: 2054299706051243256}
+  m_Layer: 0
+  m_Name: AllMarkersPlaced
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2054299706051243254
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054299706051243253}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8254038030490139517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054299706051243253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fb38182ace946a6890c1e8d6ca2014d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showInfoBarOnEnable: 1
+  infoWindowCaller: {fileID: 0}
+  descriptionSuccess: 
+  descriptionFailure: 
+  taskStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  taskCompleted:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2054299706051243256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054299706051243253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dba02e66f54a14887229e0c6e55319, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modalWindowConfig:
+    title: 
+    image: {fileID: 0}
+    message: Excellent, all markers are placed!
+    uiColors:
+      useCustomColors: 0
+      headerColor: {r: 0, g: 0, b: 0, a: 0}
+      bodyColor: {r: 0, g: 0, b: 0, a: 0}
+      footerColor: {r: 0, g: 0, b: 0, a: 0}
+    modalWindowBodyLayout: 0
+    reverseImageAndTextOrder: 0
+    showPinButton: 1
+    forceFollowState: 4
+    confirmButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    declineButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    alternate1ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    alternate2ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    alternate3ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+  triggerOnEnable: 0
+  closeOnDisable: 0
+  onConfirmCallback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8254038030490139517}
+        m_TargetAssemblyTypeName: FloatingUI.TutorialSequencing.TutorialTask, Assembly-CSharp
+        m_MethodName: NextState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onDeclineCallback:
+    m_PersistentCalls:
+      m_Calls: []
+  onAlternate1Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  onAlternate2Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  onAlternate3Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  LocalModalWindowPanel: {fileID: 0}

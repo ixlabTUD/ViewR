@@ -1,0 +1,288 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2054299706051243253
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2054299706051243254}
+  - component: {fileID: 2054299706051243255}
+  - component: {fileID: 2054299706051243256}
+  - component: {fileID: 2054299706051243257}
+  - component: {fileID: 2054299706051243258}
+  - component: {fileID: 4659184381543723872}
+  m_Layer: 0
+  m_Name: PlaceMarker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2054299706051243254
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054299706051243253}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2054299706051243255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054299706051243253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d843f951fbc4583a5d82a22e9a44304, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showInfoBarOnEnable: 1
+  infoWindowCaller: {fileID: 0}
+  descriptionSuccess: Marker placed successfully
+  descriptionFailure: Marker removed
+  taskStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  taskCompleted:
+    m_PersistentCalls:
+      m_Calls: []
+  alignmentMarkerPair: {fileID: 0}
+--- !u!114 &2054299706051243256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054299706051243253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dba02e66f54a14887229e0c6e55319, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modalWindowConfig:
+    title: 
+    image: {fileID: 21300000, guid: b9fbbe4f64751264faa2d9975cc01b2f, type: 3}
+    message: Please place the marker as shown in the image.
+    uiColors:
+      useCustomColors: 0
+      headerColor: {r: 0, g: 0, b: 0, a: 0}
+      bodyColor: {r: 0, g: 0, b: 0, a: 0}
+      footerColor: {r: 0, g: 0, b: 0, a: 0}
+    modalWindowBodyLayout: 0
+    reverseImageAndTextOrder: 1
+    showPinButton: 1
+    forceFollowState: 3
+    confirmButtonConfig:
+      buttonText: Next
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 0
+    declineButtonConfig:
+      buttonText: Previous Marker
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    alternate1ButtonConfig:
+      buttonText: Restart alignment
+      useCustomColor: 0
+      customButtonColor: {r: 0.9528302, g: 0.57073987, b: 0.5363415, a: 1}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 0
+    alternate2ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    alternate3ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+  triggerOnEnable: 0
+  closeOnDisable: 0
+  onConfirmCallback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2054299706051243255}
+        m_TargetAssemblyTypeName: TutorialSequencing.AlignmentTutorial.AlignmentTutorialTask,
+          Assembly-CSharp
+        m_MethodName: NextTaskIfThisCompleted
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onDeclineCallback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2054299706051243255}
+        m_TargetAssemblyTypeName: FloatingUI.TutorialSequencing.TutorialTask, Assembly-CSharp
+        m_MethodName: PreviousState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2054299706051243255}
+        m_TargetAssemblyTypeName: FloatingUI.TutorialSequencing.AlignmentTutorial.AlignmentTutorialTask,
+          Assembly-CSharp
+        m_MethodName: ResetMarker
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onAlternate1Callback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Pixelplacement.State, Assembly-CSharp
+        m_MethodName: ChangeState
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onAlternate2Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  onAlternate3Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  LocalModalWindowPanel: {fileID: 0}
+--- !u!114 &2054299706051243257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054299706051243253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b944d4cd910301c428dd378e9056809b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2054299706051243258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054299706051243253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da3071e4514c42d7bb2e8b841cae96d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  callOnAwake:
+    m_PersistentCalls:
+      m_Calls: []
+  callOnStart:
+    m_PersistentCalls:
+      m_Calls: []
+  callOnEnable:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2054299706051243255}
+        m_TargetAssemblyTypeName: FloatingUI.TutorialSequencing.AlignmentTutorial.AlignmentTutorialTask,
+          Assembly-CSharp
+        m_MethodName: ResetMarker
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4659184381543723872}
+        m_TargetAssemblyTypeName: FloatingUI.TutorialSequencing.AlignmentTutorial.AlignmentManagerTunnel,
+          Assembly-CSharp
+        m_MethodName: StartPositioningMarkers
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  callOnDisable:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4659184381543723872}
+        m_TargetAssemblyTypeName: FloatingUI.TutorialSequencing.AlignmentTutorial.AlignmentManagerTunnel,
+          Assembly-CSharp
+        m_MethodName: StopPositioningMarkers
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  callOnDestroy:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &4659184381543723872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054299706051243253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9da90bd600ae9924399d18d371605bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

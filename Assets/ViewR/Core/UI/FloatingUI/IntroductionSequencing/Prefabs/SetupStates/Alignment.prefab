@@ -1,0 +1,358 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6774799679569062627
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6774799679569062624}
+  - component: {fileID: 6774799679569062639}
+  - component: {fileID: 6774799679569062636}
+  - component: {fileID: 6774799679569062625}
+  m_Layer: 0
+  m_Name: Alignment
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &6774799679569062624
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6774799679569062627}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6774799680821414521}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6774799679569062639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6774799679569062627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dba02e66f54a14887229e0c6e55319, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modalWindowConfig:
+    title: Alignment
+    image: {fileID: 0}
+    message: Please walk to a calibration station and press the two lower buttons
+      on your controller (B&Y).
+    uiColors:
+      useCustomColors: 0
+      headerColor: {r: 0, g: 0, b: 0, a: 0}
+      bodyColor: {r: 0, g: 0, b: 0, a: 0}
+      footerColor: {r: 0, g: 0, b: 0, a: 0}
+    modalWindowBodyLayout: 0
+    reverseImageAndTextOrder: 0
+    showPinButton: 1
+    forceFollowState: 3
+    confirmButtonConfig:
+      buttonText: Confirm
+      useCustomColor: 0
+      customButtonColor: {r: 0.1764706, g: 0.53333336, b: 0.1764706, a: 1}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 0
+    declineButtonConfig:
+      buttonText: Skip alignment!
+      useCustomColor: 1
+      customButtonColor: {r: 0.5377358, g: 0.1403524, b: 0.1403524, a: 1}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 1
+      customButtonBackgroundSprite: {fileID: 21300000, guid: efaeb4f479ffb374192fe39811879334,
+        type: 3}
+      closeWindowIfButtonClicked: 1
+    alternate1ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    alternate2ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    alternate3ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+  triggerOnEnable: 0
+  closeOnDisable: 0
+  onConfirmCallback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6774799679569062636}
+        m_TargetAssemblyTypeName: ViewR.FloatingUI.TutorialSequencing.TutorialTask,
+          ViewR
+        m_MethodName: NextIfCompleted
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onDeclineCallback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6774799679569062625}
+        m_TargetAssemblyTypeName: ViewR.FloatingUI.TutorialSequencing.AlignmentTutorial.ShowSpace.ShowSpaceAccessor,
+          ViewR
+        m_MethodName: DoShowSpace
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6774799679569062636}
+        m_TargetAssemblyTypeName: ViewR.FloatingUI.TutorialSequencing.TutorialTask,
+          ViewR
+        m_MethodName: NextState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  onAlternate1Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  onAlternate2Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  onAlternate3Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  onShowWindow:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6774799679569062625}
+        m_TargetAssemblyTypeName: ViewR.FloatingUI.TutorialSequencing.AlignmentTutorial.ShowSpace.ShowSpaceAccessor,
+          ViewR
+        m_MethodName: DoHideSpace
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onCloseWindow:
+    m_PersistentCalls:
+      m_Calls: []
+  LocalModalWindowPanel: {fileID: 0}
+--- !u!114 &6774799679569062636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6774799679569062627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e147d8dbfb3da7b459278ed4cfa3d8d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showInfoBarOnEnable: 1
+  infoWindowCaller: {fileID: 0}
+  descriptionSuccess: 
+  descriptionFailure: 
+  taskStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  taskCompleted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6774799679569062625}
+        m_TargetAssemblyTypeName: ViewR.AlignWorlds.ShowSpace.ShowSpaceAccessor,
+          ViewR
+        m_MethodName: DoShowSpace
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6774799679569062625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6774799679569062627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e0dc284f112442cba127ba9a766b5a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &6774799680821414520
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6774799680821414521}
+  - component: {fileID: 6774799680821414503}
+  - component: {fileID: 6774799680821414498}
+  - component: {fileID: 6774799680821414501}
+  m_Layer: 0
+  m_Name: VRIKHeightSetterState
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &6774799680821414521
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6774799680821414520}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6774799679569062624}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6774799680821414503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6774799680821414520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8908527fd38c4a7c91bdc1c423b66e2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useCoroutine: 1
+  localIKBodyCalibration: {fileID: 0}
+--- !u!114 &6774799680821414498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6774799680821414520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da3071e4514c42d7bb2e8b841cae96d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  callOnAwake:
+    m_PersistentCalls:
+      m_Calls: []
+  callOnStart:
+    m_PersistentCalls:
+      m_Calls: []
+  callOnEnable:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6774799680821414501}
+        m_TargetAssemblyTypeName: ViewR.FinalIK.Scripts.BodyHeight.IKPseudoGrounderToggle,
+          Assembly-CSharp
+        m_MethodName: DisableGrounder
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6774799680821414503}
+        m_TargetAssemblyTypeName: ViewR.FinalIK.Scripts.BodyHeight.IKBodyCalibrationSetter,
+          ViewR
+        m_MethodName: CalibrateHeadAndHands
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  callOnDisable:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6774799680821414501}
+        m_TargetAssemblyTypeName: ViewR.FinalIK.Scripts.BodyHeight.IKPseudoGrounderToggle,
+          Assembly-CSharp
+        m_MethodName: EnableGrounder
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  callOnDestroy:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &6774799680821414501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6774799680821414520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72eb4e9ed17244589cdec951ed75096e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

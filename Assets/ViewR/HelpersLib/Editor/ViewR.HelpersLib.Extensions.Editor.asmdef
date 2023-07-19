@@ -1,0 +1,18 @@
+{
+    "name": "ViewR.HelpersLib.Extensions.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:fb71f8e14950ab34b88528592325fca6"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

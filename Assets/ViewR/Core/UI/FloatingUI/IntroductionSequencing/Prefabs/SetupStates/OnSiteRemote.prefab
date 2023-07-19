@@ -1,0 +1,242 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2448071948141207218
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2448071948141207219}
+  - component: {fileID: 2448071948141207217}
+  - component: {fileID: 2448071948141207216}
+  - component: {fileID: 2448071948141207222}
+  - component: {fileID: 2448071948141207223}
+  m_Layer: 0
+  m_Name: OnSiteRemote
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2448071948141207219
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2448071948141207218}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2448071948141207217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2448071948141207218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dba02e66f54a14887229e0c6e55319, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modalWindowConfig:
+    title: Location
+    image: {fileID: 0}
+    message: Are you on site or are you joining remotely?
+    uiColors:
+      useCustomColors: 0
+      headerColor: {r: 0, g: 0, b: 0, a: 0}
+      bodyColor: {r: 0, g: 0, b: 0, a: 0}
+      footerColor: {r: 0, g: 0, b: 0, a: 0}
+    modalWindowBodyLayout: 0
+    reverseImageAndTextOrder: 0
+    showPinButton: 1
+    forceFollowState: 3
+    confirmButtonConfig:
+      buttonText: On Site
+      useCustomColor: 0
+      customButtonColor: {r: 0.1764706, g: 0.53333336, b: 0.1764706, a: 1}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    declineButtonConfig:
+      buttonText: Remote
+      useCustomColor: 1
+      customButtonColor: {r: 0.83137256, g: 0.6039216, b: 0.41568628, a: 1}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 1
+      customButtonBackgroundSprite: {fileID: 21300000, guid: efaeb4f479ffb374192fe39811879334,
+        type: 3}
+      closeWindowIfButtonClicked: 1
+    alternate1ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    alternate2ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+    alternate3ButtonConfig:
+      buttonText: 
+      useCustomColor: 0
+      customButtonColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomFontColor: 0
+      customFontColor: {r: 0, g: 0, b: 0, a: 0}
+      useCustomBackgroundSprite: 0
+      customButtonBackgroundSprite: {fileID: 0}
+      closeWindowIfButtonClicked: 1
+  triggerOnEnable: 0
+  closeOnDisable: 0
+  onConfirmCallback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2448071948141207222}
+        m_TargetAssemblyTypeName: ViewR.StatusManagement.Setters.ClientPhysicalLocationSetter,
+          Assembly-CSharp
+        m_MethodName: SetClientLocationOnSite
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2448071948141207216}
+        m_TargetAssemblyTypeName: FloatingUI.TutorialSequencing.TutorialTask, Assembly-CSharp
+        m_MethodName: NextState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onDeclineCallback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2448071948141207222}
+        m_TargetAssemblyTypeName: ViewR.StatusManagement.Setters.ClientPhysicalLocationSetter,
+          Assembly-CSharp
+        m_MethodName: SetClientLocationRemote
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: fschier.SurgeExtensions.StateMachineExt.StateMachineExtended,
+          Assembly-CSharp
+        m_MethodName: SetStateByGameObject
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2448071948141207223}
+        m_TargetAssemblyTypeName: ViewR.FloatingUI.TutorialSequencing.AlignmentTutorial.ShowSpace.ShowSpaceAccessor,
+          Assembly-CSharp
+        m_MethodName: DoShowSpace
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onAlternate1Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  onAlternate2Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  onAlternate3Callback:
+    m_PersistentCalls:
+      m_Calls: []
+  onShowWindow:
+    m_PersistentCalls:
+      m_Calls: []
+  onCloseWindow:
+    m_PersistentCalls:
+      m_Calls: []
+  LocalModalWindowPanel: {fileID: 0}
+--- !u!114 &2448071948141207216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2448071948141207218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fb38182ace946a6890c1e8d6ca2014d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showInfoBarOnEnable: 1
+  infoWindowCaller: {fileID: 0}
+  descriptionSuccess: 
+  descriptionFailure: 
+  taskStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  taskCompleted:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2448071948141207222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2448071948141207218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f84cb5c137e4f8f4c8348d4eb7f67d1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2448071948141207223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2448071948141207218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e0dc284f112442cba127ba9a766b5a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a9f247ccdba482486f6d4b1fb3982f6, type: 3}
+  m_Name: TweenConfig-DuplicateObjectScaleIn
+  m_EditorClassIdentifier: 
+  fixedDuration: 0.7
+  fixedDelay: 0
+  tweenAnimationCurve: 9
+  useCustomAnimationCurveInstead: 1
+  customAnimationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0.82417804
+      outSlope: 0.82417804
+      tangentMode: 0
+      weightedMode: 2
+      inWeight: 0
+      outWeight: 0.3184514
+    - serializedVersion: 3
+      time: 0.8630567
+      value: 1.241204
+      inSlope: -0.018803751
+      outSlope: -0.018803751
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.2820257
+      outWeight: 0.35549623
+    - serializedVersion: 3
+      time: 0.9438711
+      value: 0.95980585
+      inSlope: -0.12580544
+      outSlope: -0.12580544
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.3095635
+      outWeight: 0.43017742
+    - serializedVersion: 3
+      time: 1.0007324
+      value: 1
+      inSlope: -2.1182694
+      outSlope: -2.1182694
+      tangentMode: 0
+      weightedMode: 1
+      inWeight: 0.5365552
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  loopType: 0
+  tweenStatus: 0
+  obeyTimescale: 1
+  useRandomDuration: 1
+  minMaxDuration: {x: 0.35, y: 0.7}
+  useRandomDelay: 0
+  minMaxDelay: {x: 0, y: 0}
+  useProbabilityCurveDuration: 0
+  probabilityCurveAnimationDuration:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  useProbabilityCurveDelay: 0
+  probabilityCurveAnimationDelay:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  debugging: 0
+  overwriteCustomCurveIfItIsNotUsed: 1

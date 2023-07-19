@@ -1,0 +1,18 @@
+{
+	"name": "com.ixlab.alignment",
+	"displayName": "IXLAB Alignment",
+	"version": "1.0.0",
+	"unity": "2021.3",
+	"author": "IXLAB",
+	"description": "ixAlignment",
+	"dependencies": {
+		"com.unity.inputsystem": "1.4.4",
+		"com.unity.textmeshpro": "3.0.6"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://dev.ixlab.inf.tu-dresden.de/lab/multiuservrfoundations/viewr_opensource.git?path=/Assets/ViewR/Core/Calibration"
+	},
+	"samples": [
+    	]
+}

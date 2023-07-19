@@ -1,0 +1,23 @@
+@echo off
+echo DESCRIPTION:
+echo This program creates a "Samples~" folder should it not exist. This folder will be pushed through git. 
+echo This program will then create a SymLink folder "Samples" that Unity will recognize and use.
+echo Thus we will be able to work in Unity whilst pushing the "Samples~" folder.
+echo  -- YOU SHOULD ADD the "Samples" folder to your .gitignore --
+echo.
+echo.
+
+if exist Samples~\ (
+  echo Folder Samples~ already exists - we're good.
+) else (
+  echo Creating folder Samples~.
+  mkdir Samples~
+)
+
+echo.
+echo creating SymLink folder:
+mklink /J Samples Samples~
+
+echo.
+echo Completed!
+pause
