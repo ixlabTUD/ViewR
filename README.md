@@ -24,7 +24,7 @@ ViewR Description
 2. Add "CalibrationManager" and "CalibrationStations" prefabs to your SceneContent
 3. Set references in CalibrationManager
     -   CenterEye- Camera of the player
-    -   TransformToMove - the gameobjects which is at the end calibrated (usally the tracking space of the camera)
+    -   TransformToMove - the gameobject which is at the end calibrated (usally the tracking space of the camera)
     -   Left/RightHandAnchor - Gameobjects which resemble either the hand and/or controller positions. This is used for the feedback UI
     -   Left/Right wrist - The wrist joints of the tracked hands which should match the position in the calibration station image
     -   Left/Right controller calibration point - The point on the controller which should match the point on the calibration stations. 
@@ -33,10 +33,8 @@ ViewR Description
 
 ### Calibration
 
-For the calibration system: place calibration stations at same position as in the real world. The corresponding sheets can be printed on A3 paper with the picutres under: "ViewR/Core/Calibration/Materials"
+For the calibration system: place calibration stations at same position as in the real world. The corresponding sheets can be printed on A3 paper with the picutres under: "Images/CalibrationStations/"
 Controllers are used with primary button changable in "ControllerBasedCalibrator" under the "CalibrationManager"
-Pointer on controller has to match station
-
 
 <img src="Images/calibration.png" width="600" height="200">
 
