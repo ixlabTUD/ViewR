@@ -1,7 +1,6 @@
 {
   "dependencies": {
     "com.eflatun.scenereference": "git+https://github.com/starikcetin/Eflatun.SceneReference.git#1.3.0",
-    "com.ixlab.foyerapb": "https://dev.ixlab.inf.tu-dresden.de/lab/ixmodels/foyerapb_content.git?path=/Assets/FoyerAPB_Core",
     "com.normalvr.normcore": "2.4.1",
     "com.unity.animation.rigging": "1.1.1",
     "com.unity.collab-proxy": "1.17.7",

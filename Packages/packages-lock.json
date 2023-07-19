@@ -10,13 +10,6 @@
       },
       "hash": "8d0426a222648c2173a2a2cecbdf79575d1b83de"
     },
-    "com.ixlab.foyerapb": {
-      "version": "https://dev.ixlab.inf.tu-dresden.de/lab/ixmodels/foyerapb_content.git?path=/Assets/FoyerAPB_Core",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "d53abf22fedff1f964ca31cb16a0c1dd60e6795f"
-    },
     "com.normalvr.normcore": {
       "version": "2.4.1",
       "depth": 0,

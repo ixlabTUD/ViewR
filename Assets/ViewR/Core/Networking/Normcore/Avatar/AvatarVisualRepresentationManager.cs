@@ -29,10 +29,6 @@ namespace ViewR.Core.Networking.Normcore.Avatar
         [SerializeField]
         private ObjectsToToggle simplifiedShapeObjects;
 
-        [Header("IK")]
-        [SerializeField]
-        private ObjectsToToggle ikObjects;
-
         [Header("References")]
         [SerializeField]
         private AvatarAccessHelper avatarAccessHelper;
@@ -202,7 +198,6 @@ namespace ViewR.Core.Networking.Normcore.Avatar
 
             avatarObjects.Enable(false);
             simplifiedShapeObjects.Enable(false);
-            ikObjects.Enable(false);
         }
 
         private void ShowAvatar()
@@ -212,7 +207,6 @@ namespace ViewR.Core.Networking.Normcore.Avatar
 
             avatarObjects.Enable(true);
             simplifiedShapeObjects.Enable(false);
-            ikObjects.Enable(false);
         }
 
         private void ShowPassthroughCapsule()
@@ -222,7 +216,6 @@ namespace ViewR.Core.Networking.Normcore.Avatar
 
             avatarObjects.Enable(false);
             simplifiedShapeObjects.Enable(true);
-            ikObjects.Enable(false);
         }
 
         /// <summary>
@@ -232,14 +225,6 @@ namespace ViewR.Core.Networking.Normcore.Avatar
         {
             if (debugging)
                 Debug.Log($"Executing: {nameof(ShowPassthroughIK)}.".StartWithFrom(GetType()), this);
-
-#if IK_UTILITY_PRESENT
-            avatarObjects.Enable(false);
-            simplifiedShapeObjects.Enable(false);
-            ikObjects.Enable(true);
-
-            return;
-#endif
 
             /*
             Debug.LogWarning(
